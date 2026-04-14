@@ -11,8 +11,37 @@
 
     <!--Форму размещай тут-->
     <form action="/pets/orders" method="post">
+        <label>
+            Тип питомца
+            <select name="petType">
+                <option value="cat" selected>Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="capibara">Капибара</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="male" checked> Мужской
+            <input type="radio" name="day" value="female"> Женский
+        </label>
+
+        <label>
+            Цвет питомца
+            <input type = "color" name = "eyeColor">
+        </label>
+
+        <label>
+            Длина хвоста, см
+            <input type = "number" name = "tailLength">
+        </label>
+
+        <label>
+            Имя
+            <input type = "text" name = "name">
+        </label>
+
         <button name="submit">
-            <strong>Отправьте нам</strong> сообщение
+             Отправить
         </button>
     </form>
 
