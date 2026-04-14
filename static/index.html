@@ -16,13 +16,14 @@
             <select name="petType">
                 <option value="cat">Кошка</option>
                 <option value="dog">Собака</option>
-                <option value="capibara" selected>Капибара</option>
+                <option value="tiger" selected>Тигр</option>
             </select>
         </label>
 
         <label>
-            <input type="radio" name="gender" value="male" checked> Мужской
-            <input type="radio" name="gender" value="female"> Женский
+            <input type="radio" name="gender" value="boy" checked> Мужской
+            <input type="radio" name="gender" value="girl"> Женский
+            <input type="radio" name="gender" value="none"> Не придумал
         </label>
 
         <label>
@@ -32,12 +33,12 @@
 
         <label>
             Длина хвоста, см
-            <input type = "number" name = "tailLength" placeholder="10">
+            <input type = "number" name = "tailLength" placeholder="10" min="7" max="120" required>
         </label>
 
         <label>
             Имя
-            <input type = "text" name = "name" placeholder="Муся">
+            <input type = "text" name = "name" placeholder="Муся" minlength="3" maxlength="50" required>
         </label>
 
         <label>
