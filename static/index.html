@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
@@ -38,6 +38,26 @@
         <label>
             Имя
             <input type = "text" name = "name" placeholder="Муся">
+        </label>
+
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" required value="2004-04-12">
+        </label>
+
+        <label>
+            Email
+            <input type="email" name="email" placeholder="email@example.com" required value="op81@google.com">
+        </label>
+
+        <label>
+            Номер телефона
+            <input type="tel" name="phone" placeholder="+7__________" required value="+79530526216">
+        </label>
+
+        <label>
+            Согласен с правилами использования сервиса
+            <input type="checkbox" name="rules" value="true" required>
         </label>
 
         <button type="submit"> Отправить </button>
